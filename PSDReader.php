@@ -16,7 +16,7 @@ class PSDReader {
 	var $tempFileName;
 	var $colorBytesLength;
 
-	function __constructor($fileName) {
+	public function __construct($fileName) {
 		set_time_limit(0);
 		$this->infoArray = array();
 		$this->fileName = $fileName;
@@ -271,7 +271,7 @@ class PSDReader {
  */
 
 function imagecreatefrompsd($fileName) {
-	$psdReader = new PhpPsdReader($fileName);
+	$psdReader = new PSDReader($fileName);
 	if (isset($psdReader->infoArray['error'])) return '';
 	else return $psdReader->getImage();
 }
