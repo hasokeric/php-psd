@@ -1,5 +1,23 @@
 <?
-/*
+/* This file is released under the GPL, any version you like
+*
+*	PHP PSD reader class, v1.3
+*
+*	By Tim de Koning
+*
+*	Kingsquare Information Services, 22 jan 2007
+*
+*	example use:
+*	------------
+*	<?php
+*	include_once('classPhpPsdReader.php')
+*	header("Content-type: image/jpeg");
+*	print imagejpeg(imagecreatefrompsd('test.psd'));
+*	?>
+*
+*	More info, bugs or requests, contact info@kingsquare.nl
+*
+*	Latest version and demo: http://www.kingsquare.nl/phppsdreader
 *
 *	TODO
 *	----
